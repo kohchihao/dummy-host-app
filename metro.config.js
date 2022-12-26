@@ -23,7 +23,7 @@ module.exports = {
   resolver: {
     extraNodeModules: new Proxy(extraNodeModules, {
       get: (target, name) => {
-        // redirects dependencies referenced from shared/ to local node_modules
+        // redirects dependencies referenced from micro-app/ to local node_modules
         return name in target
           ? target[name]
           : path.join(process.cwd(), `node_modules/${name.toString()}`);
