@@ -7,7 +7,9 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build:ios": "react-native bundle --entry-file index.js --bundle-output ./ios/main.jsbundle --platform ios",
+    "run:ios": "react-native run-ios --configuration=release"
   },
   "dependencies": {
     "lodash": "^4.17.21",
