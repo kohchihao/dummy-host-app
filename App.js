@@ -26,7 +26,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import App2 from 'FeatureApp';
-import MicroApp2 from 'micro-app-2/App';
+// import MicroApp2 from 'micro-app-2/App';
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -45,7 +45,7 @@ const App = () => {
         style={backgroundStyle}>
         <Header />
         <App2 />
-        <MicroApp2 />
+        {/* <MicroApp2 /> */}
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
